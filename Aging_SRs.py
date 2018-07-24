@@ -19,5 +19,4 @@ df.rename(columns={'Create_Date': 'SR Create Date'}, inplace=True)
 
 writer = pd.ExcelWriter('output_test.xlsx')
 df.to_excel(writer)
-# df.to_excel(writer)
 writer.save()
